@@ -1,4 +1,8 @@
 {
   "name": "open-trail-map-styles",
-  "packageManager": "yarn@4.5.2"
+  "packageManager": "yarn@4.5.2",
+  "dependencies": {
+    "mapbox-gl-style-build": "https://github.com/stamen/mapbox-gl-style-build",
+    "maperture": "https://github.com/stamen/maperture"
+  }
 }
