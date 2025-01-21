@@ -2,7 +2,13 @@
   "name": "open-trail-map-styles",
   "packageManager": "yarn@4.5.2",
   "dependencies": {
-    "mapbox-gl-style-build": "https://github.com/stamen/mapbox-gl-style-build",
-    "maperture": "https://github.com/stamen/maperture"
+    "live-server": "^1.2.2",
+    "mapbox-gl-style-build": "https://github.com/mizmay/mapbox-gl-style-build",
+    "maperture": "https://github.com/mizmay/maperture"
+  },
+  "scripts": {
+    "maperture-update": "rm -rf show/maperture/dist && cp -r node_modules/maperture/dist show/maperture/dist",
+    "maperture-init-local-configs": "cp node_modules/maperture/public/config/local.example.js show/maperture/local.js",
+    "maperture-start": "yarn live-server --port=8888 --cors --entry-file=show/maperture/index.html --open=show/maperture --host=localhost ./"
   }
 }
