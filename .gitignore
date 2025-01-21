@@ -13,3 +13,9 @@
 .pnp.*
 maperture/*
 node_modules/*
+.gitattributes
+.editorconfig
+.yarnrc.yml
+package-lock.json
+package.json
+yarn.lock
