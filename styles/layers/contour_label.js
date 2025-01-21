@@ -47,17 +47,14 @@ module.exports.default = (context) => {
         15,
         ["case", ["==", ["get", "idx"], true], 1, 0.8]
       ],
-      "text-color": "#526653",
-      "text-halo-color": "#c8facc",
+      "text-color": context.colors.contour_label_textColor,
+      "text-halo-color": context.colors.background,
       "text-halo-width": 1.5
     }
   };
+  
   let overrides = {};
-  if (context.styleName === 'OpenTrailMap-Eval') {
-      overrides = {"paint": {"text-color": "#000000", "text-halo-color": "#537e4e"}};
-  } else if (context.styleName === 'OpenTrailMap-Reference') {
-      overrides = {};
-  }
+
   return {
     baseStyle,
     overrides

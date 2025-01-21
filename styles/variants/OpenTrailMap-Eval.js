@@ -1,6 +1,8 @@
 module.exports.context = {
   colors: {
     background: '#537e4e',
+    contour_label_textColor: '#000000',
+    contour_lineColor: '#000000',
   },
   styleName: 'OpenTrailMap-Eval'
 };
