@@ -280,10 +280,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"abbrev@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "abbrev@npm:2.0.0"
-  checksum: 10c0/f742a5a107473946f426c691c08daba61a1d15942616f300b5d32fd735be88fef5cba24201757b6c407fd564555fb48c751cfa33519b2605c8a7aadd22baf372
+"abbrev@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "abbrev@npm:3.0.0"
+  checksum: 10c0/049704186396f571650eb7b22ed3627b77a5aedf98bb83caf2eac81ca2a3e25e795394b0464cfb2d6076df3db6a5312139eac5b6a126ca296ac53c5008069c28
   languageName: node
   linkType: hard
 
@@ -919,7 +919,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.3.4, debug@npm:^4.3.5":
+"debug@npm:4, debug@npm:^4, debug@npm:^4.3.4, debug@npm:^4.3.5":
   version: 4.4.0
   resolution: "debug@npm:4.4.0"
   dependencies:
@@ -2266,7 +2266,7 @@ __metadata:
 
 "js-yaml@github:tangrams/js-yaml#read-only":
   version: 3.5.3
-  resolution: "js-yaml@git+ssh://git@github.com/tangrams/js-yaml.git#commit=1637976c6f593bed33ed088aedb6d01390a947c0"
+  resolution: "js-yaml@https://github.com/tangrams/js-yaml.git#commit=1637976c6f593bed33ed088aedb6d01390a947c0"
   dependencies:
     argparse: "npm:^1.0.2"
     esprima: "npm:^2.6.0"
@@ -2481,7 +2481,7 @@ __metadata:
 
 "mapbox-gl-style-build@https://github.com/mizmay/mapbox-gl-style-build":
   version: 0.6.0
-  resolution: "mapbox-gl-style-build@git+ssh://git@github.com/stamen/mapbox-gl-style-build.git#commit=eab33762dad9811629dbc2cd682b559a6b8dba3a"
+  resolution: "mapbox-gl-style-build@https://github.com/mizmay/mapbox-gl-style-build.git#commit=eab33762dad9811629dbc2cd682b559a6b8dba3a"
   dependencies:
     "@mapbox/mapbox-gl-style-spec": "npm:^13.28.0"
     chalk: "npm:4.1.2"
@@ -2501,7 +2501,7 @@ __metadata:
 
 "mapbox-gl-style-format@github:stamen/mapbox-gl-style-format#v0.3.0":
   version: 0.3.0
-  resolution: "mapbox-gl-style-format@git+ssh://git@github.com/stamen/mapbox-gl-style-format.git#commit=e8d2427d6168dc6a948a187684b745e80534d843"
+  resolution: "mapbox-gl-style-format@https://github.com/stamen/mapbox-gl-style-format.git#commit=e5a84f405e9b900a93601dc6cfba778ef6b1d737"
   dependencies:
     "@mapbox/mapbox-gl-style-spec": "npm:^13.28.0"
     json-stringify-pretty-compact: "npm:^3.0.0"
@@ -2544,7 +2544,7 @@ __metadata:
 
 "maperture@https://github.com/mizmay/maperture":
   version: 0.16.0
-  resolution: "maperture@git+ssh://git@github.com/mizmay/maperture.git#commit=78f7d2ca41ed37bf79ddb1d17a24434430afe697"
+  resolution: "maperture@https://github.com/mizmay/maperture.git#commit=78f7d2ca41ed37bf79ddb1d17a24434430afe697"
   dependencies:
     "@beyonk/svelte-mapbox": "npm:^8.1.4"
     "@fortawesome/free-solid-svg-icons": "npm:^6.1.1"
@@ -2563,7 +2563,7 @@ __metadata:
     stamen-attribution: "github:stamen/stamen-attribution#v0.1.0"
     svelte-fa: "npm:^2.4.0"
     tangram: "npm:^0.21.1"
-  checksum: 10c0/e149411dda2a98fde28cd688856c24049d8923e473f3c0583fe1a6a495a1232e4c081cbb5937eeb68f33fe2e45debf888eb125bbecb18b1529c19fa57cafe38e
+  checksum: 10c0/ec4d895feb179c8f27cc134e505329cf9279148c14fd5b21c7fcb9dfeb1aad49230ccb402acf9ab03cf516727b39c05a6d1d74f170ce7e2c6c26471f56e6be39
   languageName: node
   linkType: hard
 
@@ -2928,14 +2928,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nopt@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "nopt@npm:8.0.0"
+"nodemon@npm:^3.1.9":
+  version: 3.1.9
+  resolution: "nodemon@npm:3.1.9"
   dependencies:
-    abbrev: "npm:^2.0.0"
+    chokidar: "npm:^3.5.2"
+    debug: "npm:^4"
+    ignore-by-default: "npm:^1.0.1"
+    minimatch: "npm:^3.1.2"
+    pstree.remy: "npm:^1.1.8"
+    semver: "npm:^7.5.3"
+    simple-update-notifier: "npm:^2.0.0"
+    supports-color: "npm:^5.5.0"
+    touch: "npm:^3.1.0"
+    undefsafe: "npm:^2.0.5"
+  bin:
+    nodemon: bin/nodemon.js
+  checksum: 10c0/dbd6fab40e6be18929ac02366bfdc2203c1688f45186d9468f6bdeb192f0666d044500dfb729d825526715196456e6a17509a13de019b058cbce428d72d04eb5
+  languageName: node
+  linkType: hard
+
+"nopt@npm:^8.0.0":
+  version: 8.1.0
+  resolution: "nopt@npm:8.1.0"
+  dependencies:
+    abbrev: "npm:^3.0.0"
   bin:
     nopt: bin/nopt.js
-  checksum: 10c0/19cb986f79abaca2d0f0b560021da7b32ee6fcc3de48f3eaeb0c324d36755c17754f886a754c091f01f740c17caf7d6aea8237b7fbaf39f476ae5e30a249f18f
+  checksum: 10c0/62e9ea70c7a3eb91d162d2c706b6606c041e4e7b547cbbb48f8b3695af457dd6479904d7ace600856bf923dd8d1ed0696f06195c8c20f02ac87c1da0e1d315ef
   languageName: node
   linkType: hard
 
@@ -3068,6 +3088,7 @@ __metadata:
     live-server: "npm:^1.2.2"
     mapbox-gl-style-build: "https://github.com/mizmay/mapbox-gl-style-build"
     maperture: "https://github.com/mizmay/maperture"
+    nodemon: "npm:^3.1.9"
   languageName: unknown
   linkType: soft
 
@@ -3536,7 +3557,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5":
+"semver@npm:^7.3.5, semver@npm:^7.5.3":
   version: 7.6.3
   resolution: "semver@npm:7.6.3"
   bin:
@@ -3718,6 +3739,15 @@ __metadata:
   dependencies:
     semver: "npm:~7.0.0"
   checksum: 10c0/3cbbbc71a5d9a2924f0e3f42fbf3cbe1854bfe142203456b00d5233bdbbdeb5091b8067cd34fb00f81dbfbc29fc30dbb6e026b3d58ea0551e3f26c0e64082092
+  languageName: node
+  linkType: hard
+
+"simple-update-notifier@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "simple-update-notifier@npm:2.0.0"
+  dependencies:
+    semver: "npm:^7.5.3"
+  checksum: 10c0/2a00bd03bfbcbf8a737c47ab230d7920f8bfb92d1159d421bdd194479f6d01ebc995d13fbe13d45dace23066a78a3dc6642999b4e3b38b847e6664191575b20c
   languageName: node
   linkType: hard
 
@@ -3943,7 +3973,7 @@ __metadata:
 
 "stamen-attribution@github:stamen/stamen-attribution#v0.1.0":
   version: 0.1.0
-  resolution: "stamen-attribution@git+ssh://git@github.com/stamen/stamen-attribution.git#commit=de2881a901d766b3f1d80313611599f5ea3d3f08"
+  resolution: "stamen-attribution@https://github.com/stamen/stamen-attribution.git#commit=64c25980fff980a5f7067ece75005476b5cae697"
   dependencies:
     nodemon: "npm:^2.0.22"
   bin:
@@ -4198,7 +4228,7 @@ __metadata:
 
 "topojson-client@github:tangrams/topojson-client#read-only":
   version: 2.1.0
-  resolution: "topojson-client@git+ssh://git@github.com/tangrams/topojson-client.git#commit=1068f4f2e03ddf8236499bbc896cec98d7a342b7"
+  resolution: "topojson-client@https://github.com/tangrams/topojson-client.git#commit=1068f4f2e03ddf8236499bbc896cec98d7a342b7"
   dependencies:
     commander: "npm:2"
   bin:
