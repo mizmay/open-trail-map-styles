@@ -1,5 +1,6 @@
 module.exports.context = {
   colors: {
+    background: '#537e4e',
   },
   styleName: 'OpenTrailMap-Eval'
 };
